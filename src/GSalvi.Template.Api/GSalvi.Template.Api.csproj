@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageType>Template</PackageType>
+    <Version>0.0.1</Version>
+    <Authors>Guilherme Salvi</Authors>
+    <PackageTags>dotnet-new;templates;gsalvi</PackageTags>
+    
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.2.3" />
+    <PackageReference Include="GSalvi.MessageManager" Version="1.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GSalvi.Template.Application\GSalvi.Template.Application.csproj" />
+    <ProjectReference Include="..\GSalvi.Template.Domain\GSalvi.Template.Domain.csproj" />
+    <ProjectReference Include="..\GSalvi.Template.Infrastructure\GSalvi.Template.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

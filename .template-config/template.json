@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Guilherme Salvi",
+	"classifications": [ "webapi" ],
+	"identity": "GSalvi.Template",
+	"name": "GSalvi Microservice Template",
+	"shortName": "ms-template",
+	"sourceName": "GSalvi.Template",
+	"preferNameDirectory": true,
+	"tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
